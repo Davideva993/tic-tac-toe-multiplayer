@@ -2,12 +2,12 @@
 <html>
 
 <head>
-	<title>Tris </title>
+	<title>Tic-tac-toe </title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!------------------------------------------------------------------------------------>
 	<style type="text/css">
-		#tuttibottoni {
+		#allBtn {
 			width: 100%;
 			aspect-ratio: 1/1;
 			display: flex;
@@ -15,9 +15,9 @@
 			font-size: xx-large;
 		}
 
-		.bottoni1,
-		.bottoni2,
-		.bottoni3 {
+		.btn1,
+		.btn2,
+		.btn3 {
 			width: 100%;
 			display: flex;
 			justify-content: space-around;
@@ -25,7 +25,7 @@
 			align-items: center;
 		}
 
-		#tuttibottoni button {
+		#allBtn button {
 			width: 32%;
 			aspect-ratio: 1/1;
 			padding: 0;
@@ -34,7 +34,7 @@
 			background-color: #ff00006e;
 		}
 
-		.commentialti h3,
+		.messageOnTheTop h3,
 		h4 {
 			width: 100%;
 			display: flex;
@@ -43,7 +43,7 @@
 			align-items: center;
 		}
 
-		.commentialti {
+		.messageOnTheTop {
 			width: 100%;
 			height: 15vh;
 			display: flex;
@@ -85,7 +85,7 @@
 
 		}
 
-		.commentialti {
+		.messageOnTheTop {
 			height: 16vw;
 		}
 
@@ -113,29 +113,27 @@
 </head>
 
 <body>
-	<div class="commentialti">
+	<div class="messageOnTheTop">
 		<h3 id="info">Here you will read messages</h3>
 	</div>
 
-	<!--<audio >
-  <source src="applausi.mp3" id="applausi" type="audio/mpeg">
-</audio> -->
 
-	<div id="tuttibottoni">
 
-		<div class="bottoni1">
+	<div id="allBtn">
+
+		<div class="btn1">
 			<button id="1" class="gameButton"></button>
 			<button id="2" class="gameButton"></button>
 			<button id="3" class="gameButton"></button>
 		</div>
 
-		<div class="bottoni2">
+		<div class="btn2">
 			<button id="4" class="gameButton"></button>
 			<button id="5" class="gameButton"></button>
 			<button id="6" class="gameButton"></button>
 		</div>
 
-		<div class="bottoni3">
+		<div class="btn3">
 			<button id="7" class="gameButton"></button>
 			<button id="8" class="gameButton"></button>
 			<button id="9" class="gameButton"></button>
