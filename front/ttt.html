@@ -56,7 +56,7 @@
 			max-height: 80px;
 		}
 
-		#findMatch {
+		#findMatch, #submitMessage {
 			border: solid;
 			width: 100%;
 			border-radius: 45px;
@@ -79,7 +79,7 @@
 		body {
 			background: radial-gradient(circle, rgb(0 0 0 / 63%) 71%, rgba(255, 0, 0, 1) 100%);
 			margin: 0;
-			max-width: 450px;
+			width: 100%;
 
 		}
 
@@ -110,6 +110,24 @@
 				transform: rotateY(360deg)
 			}
 		}
+
+		@media (max-width: 576px)  {
+			body {
+				width: 90%;
+			}
+		}
+		@media (min-width: 576px) and (max-width:841px) {
+			body {
+				width: 60%;
+			}
+		}
+
+		@media (min-width: 841px)  {
+			body {
+				width: 30%;
+			}
+		}
+	
 	</style>
 
 
@@ -146,8 +164,7 @@
 	</div>
 	<button id="findMatch">Find a match</button><br>
 	<form>
-		<textarea id="myMessage" placeholder="A short message...watch at the top of the page">
-		</textarea>
+		<textarea style="width: 100%;" id="myMessage" placeholder="A short message...watch at the top of the page"></textarea>
 		<button type="submit" id="submitMessage">Send or check messages</button>
 	</form>
 	<script>
