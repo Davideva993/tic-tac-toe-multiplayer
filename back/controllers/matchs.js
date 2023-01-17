@@ -213,7 +213,9 @@ exports.message = (req, res) => {
     console.log("---reqUserId or reqUserMatchNumber are wrong")
     return res.status(403).send({ message: "id and match number are necessary or forbidden chars in message" })
   }
-
+  if(reqMsg==""){
+    reqMsg="(Other user saw your message)"
+  }
   Match.find().exec((error, matchs) => {
     let thisMatch = (matchs.filter(matchsToFilter => matchsToFilter.matchNumber == reqMatchNumber))
     if (thisMatch[0] == undefined) {
